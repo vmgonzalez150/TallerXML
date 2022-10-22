@@ -1,0 +1,21 @@
+<!ELEMENT productos (producto+)>
+<!ELEMENT producto  (raton|teclado|monitor)>
+<!ELEMENT raton     (codigo, nombre?, descripcion?)>
+<!ELEMENT teclado   (codigo, nombre?, descripcion?)>    <!ELEMENT monitor   (codigo, nombre?, descripcion?)>
+<!ELEMENT codigo    (#PCDATA)>
+<!ELEMENT nombre    (#PCDATA)>
+<!ELEMENT descripcion (#PCDATA)>
+
+<productos>
+    <producto>
+        <raton>
+            <codigo>16K</codigo>
+        </raton>
+    </producto>
+    <producto>
+        <teclado>
+            <codigo>10L</codigo>
+            <descripcion>Teclado Genius</descripcion>
+        </teclado>
+    </producto>
+</productos>
